@@ -25,6 +25,11 @@ function handleClick(mouseEvent:MouseEvent):void {
     }
 }
 
+//ClickTag Button
+
+clickTag_btn.addEventListener(MouseEvent.MOUSE_UP,handleClick);
+
+
 
 //Context Menu Change
 
@@ -43,8 +48,3 @@ made_by.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, openLink);
 adContextMenu.customItems.push(made_by);
 
 contextMenu = adContextMenu;
-
-
-//ClickTag Button
-
-clickTag_btn.addEventListener(MouseEvent.MOUSE_UP,handleClick);
